@@ -67,6 +67,9 @@ header .left-banner {
     
 }
 
+
+
+
 .texto-quem-somos h1 {
 
     position: relative;
@@ -76,7 +79,7 @@ header .left-banner {
 
 .texto-quem-somos p {
 
-   max-width: 400px;
+   max-width: 600px;
    margin: 0 auto;
  }
 
@@ -152,7 +155,7 @@ h2 {
 
 #img-1 {
 
-    background-image: url(../img/massagem1.png);
+    background-image: url(../img/massagem1.jpg);
  
 }
 

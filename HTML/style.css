@@ -13,8 +13,7 @@ header {
     color: rgba(74, 74, 165, 0.966);
     padding: 10px;
     text-align: center;
-    background-image: url(/img/608.jpg);
-    background-position: center;
+
 
 }
 
@@ -68,21 +67,6 @@ header .left-banner {
 }
 
 
-
-
-.texto-quem-somos h1 {
-
-    position: relative;
-    padding: 40px;
-    
-}
-
-.texto-quem-somos p {
-
-   max-width: 600px;
-   margin: 0 auto;
- }
-
 .left-banner {
 
     position: relative;
@@ -93,6 +77,157 @@ header .left-banner {
     margin: 5px;
     font-family: 'Open Sans', sans-serif;
  }
+
+
+/*SLIDER*/
+
+.slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide { 
+    color: rgba(74, 74, 165, 0.966);
+    flex: 1;
+    height: 700px;
+    padding: 20px;
+    text-align: center;
+    background-image: url(/img/elemento-de-design-de-fundo-de-textura-de-tecido-branco.jpg);
+    background-position: center; 
+    background-size: cover;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+.slide p {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    max-width: 400px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*botoes slider*/
+
+.prevButton {
+
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+}
+
+.prevButton::before,
+.prevButton::after {
+    content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+
+}
+
+.prevButton::before {
+    left: 10px;
+  transform: rotate(45deg);
+}
+
+
+.prevButton::after {
+    left: 20px;
+  transform: rotate(-45deg);
+}
+
+.prevButton::before,
+.prevButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+}
+
+.prevButton::before {
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+.prevButton::after {
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+
+.prevButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .prevButton::before,
+  .prevButton::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+  }
+  
+  .prevButton::before {
+    left: 10px;
+    transform: rotate(45deg);
+  }
+  
+  .prevButton::after {
+    left: 20px;
+    transform: rotate(-45deg);
+  }
+  
+  .prevButton:hover::before,
+  .prevButton:hover::after {
+    background-color: #ff0000;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Massagens*/

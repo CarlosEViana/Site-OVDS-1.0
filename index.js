@@ -9,7 +9,9 @@ const nextButton = document.querySelector('#nextButton');
 let currentSlideIndex = 0;
 
 function showSlide(index) {
-  slides[currentSlideIndex].classList.add('hidden');
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.add('hidden');
+  }
   slides[index].classList.remove('hidden');
   currentSlideIndex = index;
 }

@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
 </head>
-
-
 
 <body>
 
@@ -30,7 +31,7 @@
             <nav id="banner-menu">
                 <ul>
                 <li class="center-banner"><a href="#">HOME</a></li>
-                <li class="center-banner"><a href="#">Serviços</a></li>
+                <li class="center-banner"><a href="services">Serviços</a></li>
                 <li class="center-banner"><a href="https://wa.me/5511982538941"target="_blank">Contato</a></li>
                 </ul>
             </nav>
@@ -79,7 +80,7 @@
     <main class="container">  
         <!--https://br.freepik.com/fotos-gratis/plano-aproximado-de-fundo-de-textura-de-marmore-branco_18667997.htm#page=5&query=plano%20abstrato&position=33&from_view=search&track=sph">Imagem de rawpixel.com</a> no Freepik-->
   
-        <section class="products-container">
+        <section class="products-container" id="services">
 
             <h2>Principais serviços:</h2>
             <div class="card">
@@ -257,5 +258,33 @@
 
 
     <script src="/index.js"></script>
+
+    <script>
+    function scrollToSection(event) {
+  
+
+        event.preventDefault();
+      
+        
+        const sectionId = event.target.getAttribute("href");
+      
+        
+        const section = document.querySelector(sectionId);
+      
+        
+        section.scrollIntoView({ behavior: "smooth" });
+
+        const link = document.querySelector("a[href='#services']");
+      
+        link.addEventListener("click", scrollToSection);
+
+    }
+      
+     
+      
+      
+      </script>
+
+
 </body>
 </html>

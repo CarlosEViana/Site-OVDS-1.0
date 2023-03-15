@@ -96,7 +96,7 @@ header .left-banner {
     color: rgba(74, 74, 165, 0.966);
     flex: 1;
     height: 700px;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     background-image: url(/img/elemento-de-design-de-fundo-de-textura-de-tecido-branco.jpg);
     background-position: center; 
@@ -112,7 +112,7 @@ header .left-banner {
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    max-width: 100%;
+    max-width: 300px;
     letter-spacing: 2px;
     margin-bottom: 5px;
     margin: auto;
@@ -182,7 +182,7 @@ h2 {
 
 .products-container {
     
-    max-width: 100%;
+    max-width: 92%;
     margin: 0 auto; 
     border-radius: 60px;
 
@@ -376,7 +376,14 @@ svg {
 
 @media (max-width: 320px) {
 
-
+    .slider{
+        width: 340px;
+    }
+    .slide { 
+        max-width: 100%;
+        padding: 20px;
+    }
+    
     #prevButton{
         padding: 15px;
         right: 100%;

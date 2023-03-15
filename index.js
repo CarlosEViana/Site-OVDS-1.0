@@ -16,6 +16,7 @@ function showSlide(index) {
   currentSlideIndex = index;
 }
 
+//botoes 
 prevButton.addEventListener('click', () => {
   let index = currentSlideIndex - 1;
   if (index < 0) {
@@ -34,4 +35,10 @@ nextButton.addEventListener('click', () => {
 
 showSlide(currentSlideIndex);
 
- 
+
+
+
+
+
+
+
